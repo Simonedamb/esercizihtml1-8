@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Lezione HTML</title>
+	<style>
+		label {
+			display: block
+		}
+	</style>
+
+</head>
+
+<body>
+	<header>
+		<h1>SOCIAL FRIENDS DI WENDY</h1>
+	</header>
+    <!--dati per l'iscrizione-->
+	<main>
+		<section>
+			<h3>COSA  ASPETTI, REGISTRATI PER ENTRATE NEL SOCIAL MEDIA PIU' FRIENDS CHE CI SIA! WENDY TI ASPETTA!</h3>
+			<div>
+				<form>
+					<label for="inserirenome" id="nome">
+					<span>NOME:</span>
+					<input type="text" name="nome" id="nome" placeholder="Inserisci Nome" required>
+				</form>
+			</div>
+
+			<div>
+				<form>
+					<label for="inserirecognome" id="cognome">
+				 	<span>COGNOME:</span>
+				 	<input type="text" name="cognome" id="cognome" placeholder="Inserisci Cognome" required>
+				</form>
+			</div>
+
+			<div>
+				<form>
+			 		<label for="password">
+					<span>PASSWORD:</span>
+					<input type="password" name="password" id="password" placeholder="Inserisci Password" required>
+				</form>
+			</div>
+
+	   	<div>
+	    	<form>
+				<label>
+				<span>EMAIL:</span>
+				<input type="email" name="email" id="email"  placeholder="Inserisci Email" required>
+	    	</form>
+		</div>
+		
+	    	<div>
+				<form>
+					<label>
+					<span>QUANDO SEI NATO/A:</span>
+					<input type="date" name="date" id="date" min="1990-01-01" max="2015-01-01" required>
+		 		</form>
+			</div>
+
+			<div>
+				<form>
+					<span>NUMERO DI TELEFONO</span>
+					<input type="tel" name="tel" id="tel" placeholder="+39" pattern="[0-9] {3}-[0-9] {3}-[0-9] {3}" required>
+				</form>
+			</div>
+		<!--PIANO ABBONAMENTO-->
+		<h2>Seleziona il tuo piano di iscrizione</h2>
+           <div>
+				 <label>
+					<select name="piano" id="abbonamento">    
+						<option>Piano Free</option>
+						<optgroup label="Piano a Pagamento">
+						<option value="50">50</option>
+					 	<option value="100">100</option>
+						<option value="200">200</option>
+						</optgroup> 
+					 </select>
+				 <span>Aggiungere i vantaggi PRO</span>
+			     <input type="checkbox" name="pro" id="pro">
+			</div>
+	    </section>
+	</main>
+<!--DATI PAGAMENTO-->
+	<footer>
+		<div>
+			<Label for = "cardNumber"> Numero di carta di credito:</label>
+			<Input type = "text" size = "12" id = "cardNumber" name = "cardNumber" placeholder="XXXX-XXXX-XXXX-XXXX"/>
+			<input type="text" size="10" id="CVC" name="cvc" placeholder="cvc">
+			<select>
+				<option value="GENNAIO">GENNAIO</option>
+				<option value="FEBBARIO">FEBBRAIO</option>
+				<option value="MARZO">MARZO</option>
+				<option value="APRILE">APRILE</option>
+				<option value="MAGGIO">MAGGIO</option>
+				<option value="GIUGNO">GIUGNO</option>
+				<option value="LUGLIO">LUGLIO</option>
+				<option value="AGOSTO">AGOSTO</option>
+				<option value="SETTEMBRE">SETTEMBRE</option>
+				<option value="OTTOBRE">OTTOBRE</option>
+				<option value="NOVEMBRE">NOVEMBRE</option>
+				<option value="DICEMBRE">DICEMBRE</option>
+			</select>
+            <select>
+				<option value="1">2022</option>
+				<option value="2">2023</option>
+				<option value="3">2024</option>
+				<option value="4">2025</option>
+				<option value="5">2026</option>
+				<option value="6">2027</option>
+				<option value="7">2028</option>
+				<option value="8">2029</option>
+				<option value="9">2030</option>
+				<option value="10">2031</option>
+				<option value="11">2032</option>
+				<option value="12">2033</option>
+			 </select>
+
+			<form>
+				<label>
+				<input type="text" name="Indirizzo" id="citta" placeholder="Città" required>
+				<input type="text" name="Indirizzo" id="città" placeholder="cap" required>
+				<input type="text" name="Indirizzo" id="città" placeholder="Indirizzo di fatturazione" required>
+			</form>
+
+			<div>
+				<label">
+				<input type="submit" value="Conferma Registrazione">
+			</div>
+
+		</div>
+	</footer>
+</body>
+
+</html>
