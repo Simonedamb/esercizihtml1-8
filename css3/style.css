@@ -7,27 +7,12 @@
 
 }
 
-.log{
-    display: flex;
-    justify-content: center;
-    padding: 33px;
-    border-radius: 10px;
-    
-    
-}
-
-input[type="text"]{
-    border-radius: 10px;
-    background-color: rgb(101, 202, 0);
+.titolo{
     text-align: center;
-    
-
+    font-size:xx-large;
+    color: rgb(101, 202, 0);
 }
 
-input::placeholder{
-    color: #ffffff;
-    font-size: 15px;;
-}
 
 
 .up{
