@@ -2,21 +2,45 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    min-width: 100vw;
 }
 
 section {
     display: flex;
     justify-content: space-around;
     height: 400px;
-    position: relative;
+    
 }
 
-.baby {
-    width: 100%;
-    height: 50%;
+h1 {
+    margin: 0;
+    font-size: 14px;
+}
 
+h2 {
+    margin: 0;
+    font-size: 15px;
+}
+
+.figure {
+    background-image: url(assets/cucciolo1.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    padding: 86px;
+
+}
+
+.figure-two {
+    background-image: url(assets/cucciolo2.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    padding: 86px;
+}
+
+.figure-three {
+    background-image: url(assets/cucciolo3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 86px;
 }
 
 .top {
@@ -96,14 +120,18 @@ section {
 
 
 @media (max-width: 375px) {
-    section {
+    /* section {
         display: flex;
         flex-direction: column;
         width: 100%;
         height: auto;
-    }
-    .card {
+    } */
+    /* .card {
         width: 100%;
         height: 50%;
+    } */
+
+    body {
+        
     }
 }
