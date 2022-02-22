@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    justify-content: space-around;
+} 
+
+#yellow {
+    background-color: #ffff92;
+    order: -1;
+}
+
+#red {
+    background-color: #ff919c;
+    order: -1;
+}
+
+#orange {
+    width: 20vw;
+}
+
