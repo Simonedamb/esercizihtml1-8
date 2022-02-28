@@ -7,7 +7,7 @@ body {
 section {
     display: flex;
     justify-content: space-around;
-    height: 400px;
+    flex-wrap: wrap
     
 }
 
@@ -111,27 +111,18 @@ h2 {
     section {
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-start;
-        width: 100%;
-        height: auto;
+    
     }
 
 }
 
-
+/* Visualizzazione mobile */
 @media (max-width: 375px) {
-    /* section {
+    section {
         display: flex;
         flex-direction: column;
         width: 100%;
         height: auto;
-    } */
-    /* .card {
-        width: 100%;
-        height: 50%;
-    } */
-
-    body {
-        
-    }
+    } 
+   
 }
