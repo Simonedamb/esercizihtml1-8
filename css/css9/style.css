@@ -6,7 +6,7 @@ body {
 
 section {
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     flex-wrap: wrap
     
 }
@@ -119,10 +119,7 @@ h2 {
 /* Visualizzazione mobile */
 @media (max-width: 375px) {
     section {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: auto;
+        display: block;
     } 
    
 }
