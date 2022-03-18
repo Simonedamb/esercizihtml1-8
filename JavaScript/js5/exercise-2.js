@@ -4,9 +4,9 @@
 // developer => 1500
 // default => 1000
 function calculateSalary(role) {
-  switch(role) { 
+  switch (role) {
     case 'ceo':
-    return 2200;
+      return 2200;
 
     case 'manager':
     case 'cto':
@@ -15,23 +15,19 @@ function calculateSalary(role) {
     case 'developer':
       return 1500;
 
-      default:
+    default:
       return 1000;
   }
-  
-    
-    
-    
 }
-  
-  const ceoSalary = calculateSalary('ceo');
-  const managerSalary = calculateSalary('manager');
-  const ctoSalary = calculateSalary('cto');
-  const developerSalary = calculateSalary('developer');
-  const otherSalary = calculateSalary('other');
-  
-  console.log(ceoSalary);
-  console.log(managerSalary);
-  console.log(ctoSalary);
-  console.log(developerSalary);
-  console.log(otherSalary);
+
+const ceoSalary = calculateSalary('ceo');
+const managerSalary = calculateSalary('manager');
+const ctoSalary = calculateSalary('cto');
+const developerSalary = calculateSalary('developer');
+const otherSalary = calculateSalary('other');
+
+console.log(ceoSalary);
+console.log(managerSalary);
+console.log(ctoSalary);
+console.log(developerSalary);
+console.log(otherSalary);
