@@ -1,5 +1,5 @@
 function uncompletedNotes(notes) {
-  notesFalse = notes.filter((item) =>
+  const notesFalse = notes.filter((item) =>
     item.todos.some((value) => value.done === false)
   );
   return notesFalse;
