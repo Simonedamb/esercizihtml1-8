@@ -1,6 +1,6 @@
 class Person {
   static fromObject(obj) {
-    return obj;
+    return new Person(obj.firstName, obj.lastName);
   }
 
   constructor(firstName, lastName) {
