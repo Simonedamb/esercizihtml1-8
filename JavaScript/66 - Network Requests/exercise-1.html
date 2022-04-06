@@ -1,0 +1,29 @@
+<html>
+  <body>
+    <div id="container">
+      <ul class="todo-list"></ul>
+    </div>
+  </body>
+</html>
+
+<script>
+  function todo() {
+    const list = document.querySelector(".todo-list");
+    fetch("https://jsonplaceholder.typicode.com/todos").then((response) =>
+      response
+        .json()
+        .then((data) => {
+          console.log(data);
+          return data;
+        })
+        .then((todoList) => {
+          let title = todoList.map((item) => {
+            let tag = document.createElement("li");
+            tag.innerHTML = item.title;
+            list.appendChild(tag);
+          });
+        })
+    );
+  }
+  todo();
+</script>
