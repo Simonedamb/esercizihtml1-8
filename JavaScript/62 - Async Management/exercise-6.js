@@ -37,6 +37,7 @@ async function demo(id) {
   let generic = await fetchPersonById(id);
   console.log(`${generic}`);
 }
+demo(2);
 
 fetchPersonById(2)
   .then((personJson) => JSON.parse(personJson))
