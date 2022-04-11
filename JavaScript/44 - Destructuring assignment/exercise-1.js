@@ -7,6 +7,6 @@ let temp = num2;
 num2 = num1;
 num1 = temp;
 
-let [a, b] = [temp];
+[temp] = [num2, num1];
 
 console.log("After swap: ", num1, num2); // After swap: 20 10
