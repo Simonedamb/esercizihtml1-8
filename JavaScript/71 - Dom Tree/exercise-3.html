@@ -20,10 +20,9 @@
 </html>
 
 <script>
-  const div = document.getElementById("container");
-  const arr = Object.entries(div);
-  const filtered = arr.filter(([key, value] => {
-    const justStrings = Object.fromEntries(filtered);
-    console.log(filtered);
-  }))
+  const name = document.getElementById("firstName");
+  const secondName = document.getElementById("lastName");
+  const age = document.getElementById("age");
+
+  console.log(name.textContent, name.value);
 </script>
