@@ -20,9 +20,21 @@
 </html>
 
 <script>
-  const name = document.getElementById("firstName");
-  const secondName = document.getElementById("lastName");
-  const age = document.getElementById("age");
+  const name = document.getElementById("firstName").value;
+  const nameLabel =
+    document.getElementById("firstName").parentElement.firstElementChild
+      .innerText;
+  const secondName = document.getElementById("lastName").value;
+  const secondNameLabel =
+    document.getElementById("lastName").parentElement.firstElementChild
+      .innerText;
+  const age = document.getElementById("age").value;
+  const ageLabel =
+    document.getElementById("age").parentElement.firstElementChild.innerText;
 
-  console.log(name.textContent, name.value);
+  console.log(`
+ ${nameLabel}, ${name}
+ ${secondNameLabel}, ${secondName}
+ ${ageLabel}, ${age}
+ `);
 </script>
