@@ -21,20 +21,10 @@
 
 <script>
   const name = document.getElementById("firstName").value;
-  const nameLabel =
-    document.getElementById("firstName").parentElement.firstElementChild
-      .innerText;
-  const secondName = document.getElementById("lastName").value;
-  const secondNameLabel =
-    document.getElementById("lastName").parentElement.firstElementChild
-      .innerText;
+  const lastName = document.getElementById("lastName").value;
   const age = document.getElementById("age").value;
-  const ageLabel =
-    document.getElementById("age").parentElement.firstElementChild.textContent;
-
-  console.log(`
-   ${nameLabel} ${name}
-   ${secondNameLabel} ${secondName}
-   ${ageLabel} ${age}
-   `);
+  const person = { firstName: name, lastName: lastName, age: age };
+  const form = document.querySelector("form");
+  form.setAttribute("data-person", JSON.stringify(person));
+  console.log(person);
 </script>
