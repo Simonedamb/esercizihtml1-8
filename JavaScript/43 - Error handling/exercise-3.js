@@ -35,16 +35,16 @@ class BankAccount {
 }
 
 class NegativeAmountError extends Error {
-  constructor(operation) {
-    super(operation);
-    this.Error = "Negative Amount";
+  constructor() {
+    super();
+    this.message = "Negative Amount";
   }
 }
 
 class WithdrawNotPermittedError extends Error {
-  constructor(operation) {
-    super(operation);
-    this.Error = "Insufficient Amount";
+  constructor() {
+    super();
+    this.message = "Error";
   }
 }
 

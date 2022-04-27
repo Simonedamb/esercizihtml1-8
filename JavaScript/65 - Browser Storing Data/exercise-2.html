@@ -11,8 +11,12 @@
 </html>
 
 <script>
-  document.getElementById("fetch-post").addEventListener("click", () => {
-    const button = JSON.parse(localStorage.getItem("response"));
-    document.getElementById("post-title").innerHTML = button.title;
+  const fetchPost = document.getElementById("fetch-post");
+  const postTitle = document.getElementById("post-title");
+
+  fetchPost.addEventListener("click", () => {
+    let post = JSON.parse(localStorage.getItem("key"));
+    console.log(post);
+    postTitle.innerHTML = post.title;
   });
 </script>
